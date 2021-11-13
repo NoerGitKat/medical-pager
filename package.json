@@ -6,7 +6,7 @@
   "scripts": {
     "install:depts": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
     "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
-    "lint": "eslint **/*.ts --fix",
+    "lint": "eslint **/*.ts --cache --fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -33,7 +33,7 @@
     "typescript": "^4.4.4"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,css,md}": "prettier --write"
   }
 }
