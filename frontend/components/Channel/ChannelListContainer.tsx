@@ -4,7 +4,7 @@ import CompanyHeader from "./CompanyHeader";
 
 const ChannelListContainer = () => {
   return (
-    <section>
+    <section className="channel-list__container">
       <Sidebar />
       <CompanyHeader />
     </section>

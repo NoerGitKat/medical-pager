@@ -1,4 +1,5 @@
 import "../styles/Globals.scss";
+import "../styles/ChannelListContainer.scss";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
