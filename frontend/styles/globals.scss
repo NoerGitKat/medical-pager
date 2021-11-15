@@ -19,7 +19,8 @@ body {
   padding: 0;
   height: 100%;
 }
-#root {
+#root,
+#__next {
   height: 100%;
 }
 .auth__form-container {
@@ -146,7 +147,7 @@ body {
 .app__wrapper {
   display: flex;
   flex: 1;
-  height: 100vh;
+  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 4px 0px;
 }
 .str-chat-channel-list {
@@ -333,6 +334,9 @@ body {
       font-family: Helvetica Neue, sans-serif;
       font-size: 16px;
       outline: none;
+      &::placeholder {
+        color: #fff;
+      }
     }
   }
   .channel-search {
